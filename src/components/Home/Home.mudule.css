@@ -1,0 +1,94 @@
+.Bigbox {
+    background-image: url('https://img.freepik.com/premium-photo/illuminated-crumpled-yellow-paper-light-bulb-idea-white-background_23-2147890099.jpg?w=1380');
+    background-size: 1270px;
+    background-position: center ;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Smallbox {
+    text-align: center;
+    height: 250px;
+    width: fit-content;
+    margin-left:400px;
+    background-color: #f7f5f5;
+   /* box-shadow: 0px 0px 20px 5px rgba(249, 152, 7, 0.737);*/
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    animation: Smallbox 2s infinite linear;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  @keyframes Smallbox {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(231, 160, 46, 0.612); /* Initial shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(231, 160, 46, 0.612); /* Maximum shadow */
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(231, 160, 46, 0.612); /* Restore to initial shadow */
+    }
+}
+  .Smallbox:hover{
+    height: 255px;
+    transition-duration: 100ms;
+   
+      font-size: 17px;
+  
+  }
+  .img{
+    height: 35px;
+    width: 38px;
+  }
+  .heading{
+    
+    align-items: center;
+    display: inline;
+  }
+  
+  .loginup{
+   display: flex;
+   gap: 5px;
+   
+  }
+  .log{
+    flex: 1;
+    margin-top: 0px;
+    background-color: rgb(212, 111, 43);
+    width: 340px;
+    height: 45px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+
+  }
+  .log p span a {
+    color: white;
+  }
+  .log:hover{
+    background-color: rgb(255, 184, 32);
+    
+  }
+  .sign{
+    flex: 1;
+    margin-bottom: 0px;
+    background-color: rgb(212, 111, 43);
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .sign p span a{
+    color: white;
+  }
+  .sign:hover{
+    background-color: rgb(255, 184, 32);
+  }
+  
